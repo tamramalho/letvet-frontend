@@ -7,22 +7,24 @@
 }
 
 .form {
-    width: 30rem;
+    width: 20rem;
     margin: auto;
     background: rgb(235, 235, 235);
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
     border-radius: 1rem;
+    margin-top: 1rem;
 }
 
-h1 {
+h2 {
+    margin-top: -1rem;
     width: 100%;
     text-align: center;
 }
 
 img {
-    height: 15rem;
+    height: 18rem;
     width: 100%;
-    margin: 1.5rem auto 1.5rem auto;
+    margin: auto;
 }
 
 .full-width{
@@ -31,5 +33,6 @@ img {
 
 button {
     margin-top: 1.5rem;
+    align-items: center;
 }
 
