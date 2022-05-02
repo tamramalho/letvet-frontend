@@ -32,6 +32,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MedvetListComponent } from './components/medvet/medvet-list/medvet-list.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MedvetListComponent } from './components/medvet/medvet-list/medvet-list
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    MedvetListComponent
+    MedvetListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
