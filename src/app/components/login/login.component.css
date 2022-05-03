@@ -9,13 +9,13 @@
 .form {
     width: 20rem;
     margin: auto;
-    background: rgb(235, 235, 235);
     padding: 3rem 1rem;
     border-radius: 1rem;
-    margin-top: 1rem;
+    background-color: #303030;
 }
 
-h2 {
+h1 {
+    color: white;
     margin-top: -1rem;
     width: 100%;
     text-align: center;
@@ -28,6 +28,7 @@ img {
 }
 
 .full-width{
+    margin-top: 1rem;
     width: 100%;
 }
 
@@ -36,3 +37,6 @@ button {
     align-items: center;
 }
 
+mat-icon {
+    opacity: .6;
+ }
