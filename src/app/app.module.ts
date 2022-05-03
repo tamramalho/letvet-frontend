@@ -35,6 +35,7 @@ import { MedvetListComponent } from './components/medvet/medvet-list/medvet-list
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
+import { MedvetCreateComponent } from './components/medvet/medvet-create/medvet-create.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
     HomeComponent,
     HeaderComponent,
     MedvetListComponent,
-    LoginComponent
+    LoginComponent,
+    MedvetCreateComponent
   ],
   imports: [
     BrowserModule,
