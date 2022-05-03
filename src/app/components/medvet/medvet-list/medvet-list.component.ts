@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { medvet } from 'src/app/models/medvet';
+import { MedvetService } from 'src/app/services/medvet.service';
 
 @Component({
   selector: 'app-medvet-list',
@@ -9,30 +10,30 @@ import { medvet } from 'src/app/models/medvet';
   styleUrls: ['./medvet-list.component.css']
 })
 export class MedvetListComponent implements OnInit {
-  
-  ELEMENT_DATA: medvet[] = [
-    {
-      id: 1,
-      nome: 'Letícia Ramalho',
-      cpf: '123.456.789-00',
-      email: 'leticia@email.com',
-      senha: '1234',
-      perfis: ['0'],
-      dataConsulta: '15/08/2022'
-    }
-  ];
+
+  ELEMENT_DATA: medvet[] = [];
 
   displayedColumns: string[] = ['id', 'nome', 'cpf', 'email', 'acoes'];
   dataSource = new MatTableDataSource<medvet>(this.ELEMENT_DATA);
 
-  constructor() { }
-  
-  ngOnInit(): void {
-  }
-
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+  constructor(private service: MedvetService) { }
+
+  ngOnInit(): void {
+    this.findAll();
+  }
+
+  findAll() {
+    this.service.findAll().subscribe(resposta => {
+      this.ELEMENT_DATA = resposta;
+      this.dataSource = new MatTableDataSource<medvet>(resposta);
+      this.dataSource.paginator = this.paginator;
+    })
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }
