@@ -14,4 +14,8 @@ export class MedvetService {
   findAll(): Observable<medvet[]> {
     return this.http.get<medvet[]>(`${API_CONFIG.baseUrl}/medvet`);
   }
+
+  create(medvet: medvet): Observable<medvet> {
+    return this.http.post<medvet>(`${API_CONFIG.baseUrl}/medvet`, medvet);
+  } 
 }
