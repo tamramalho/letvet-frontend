@@ -27,3 +27,10 @@ img {
     color: white;
     background: linear-gradient(346deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(152,0,171,1) 0%, rgba(255,14,148,1) 82%);
 }
+
+p {
+    margin-top: 4rem;
+    text-align: left;
+    margin-bottom: -1rem;
+    opacity: .2;
+}
