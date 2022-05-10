@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { MedvetCreateComponent } from './components/medvet/medvet-create/medvet-create.component';
 import { MedvetListComponent } from './components/medvet/medvet-list/medvet-list.component';
+import { MedvetUpdateComponent } from './components/medvet/medvet-update/medvet-update.component';
 import { NavComponent } from './components/nav/nav.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
     path: '', component: NavComponent, canActivate: [AuthGuard], children: [
       { path: 'home', component: HomeComponent },
       { path: 'medvet', component: MedvetListComponent },
-      { path: 'medvet/create', component: MedvetCreateComponent }
+      { path: 'medvet/create', component: MedvetCreateComponent },
+      { path: 'medvet/update/:id', component: MedvetUpdateComponent }
     ]
   }
 ];

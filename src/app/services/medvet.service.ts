@@ -11,6 +11,10 @@ export class MedvetService {
 
   constructor(private http: HttpClient) { }
 
+  findById(id: any): Observable<medvet>{
+    return this.http.get<medvet>(`${API_CONFIG.baseUrl}/medvet/${id}`);
+  }
+
   findAll(): Observable<medvet[]> {
     return this.http.get<medvet[]>(`${API_CONFIG.baseUrl}/medvet`);
   }
@@ -18,4 +22,8 @@ export class MedvetService {
   create(medvet: medvet): Observable<medvet> {
     return this.http.post<medvet>(`${API_CONFIG.baseUrl}/medvet`, medvet);
   } 
+
+  update(medvet: medvet): Observable<medvet>{
+    return this.http.put<medvet>(`${API_CONFIG.baseUrl}/medvet/${medvet.id}`, medvet);
+  }
 }
