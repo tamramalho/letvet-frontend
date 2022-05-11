@@ -1,18 +1,17 @@
 <div class="container mat-elevation-z8">
     <form class="form">
-        <h1 class="fullWidth">Excluir Médico</h1>
+        <h1 class="fullWidth">Excluir Paciente</h1>
         <img class="fullWidth" src="assets/img/med-vet.svg" alt="Let-Vet | Medicina Veterinária">
 
         <section class="section">
             <mat-checkbox [disabled]="true" class="margin" color="primary">Admin</mat-checkbox>
             <mat-checkbox [disabled]="true" class="margin" color="primary">Paciente</mat-checkbox>
-            <mat-checkbox [disabled]="true" class="margin" color="primary">Médico</mat-checkbox>
         </section>
 
         <mat-form-field class="fullWidth" appearance="legacy">
             <mat-label>Nome</mat-label>
             <input 
-            [(ngModel)]="medvet.nome"
+            [(ngModel)]="pacientepet.nome"
             name="nome"
             [disabled]="true"
             matInput>
@@ -22,7 +21,7 @@
         <mat-form-field class="fullWidth" appearance="legacy">
             <mat-label>CPF</mat-label>
             <input
-            [(ngModel)]="medvet.cpf"
+            [(ngModel)]="pacientepet.cpf"
             name="cpf"
             [disabled]="true"
             matInput>
@@ -32,7 +31,7 @@
         <mat-form-field class="fullWidth" appearance="legacy">
             <mat-label>E-mail</mat-label>
             <input
-            [(ngModel)]="medvet.email"
+            [(ngModel)]="pacientepet.email"
             name="email"
             [disabled]="true"
             matInput>
@@ -42,7 +41,7 @@
         <mat-form-field class="fullWidth" appearance="legacy">
             <mat-label>Senha</mat-label>
             <input 
-            [(ngModel)]="medvet.senha"
+            [(ngModel)]="pacientepet.senha"
             name="senha"
             [disabled]="true"
             matInput

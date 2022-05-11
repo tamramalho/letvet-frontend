@@ -39,6 +39,10 @@ import { MedvetCreateComponent } from './components/medvet/medvet-create/medvet-
 import { NgxMaskModule } from 'ngx-mask';
 import { MedvetUpdateComponent } from './components/medvet/medvet-update/medvet-update.component';
 import { MedvetDeleteComponent } from './components/medvet/medvet-delete/medvet-delete.component';
+import { PacientepetCreateComponent } from './components/pacientepet/pacientepet-create/pacientepet-create.component';
+import { PacientepetUpdateComponent } from './components/pacientepet/pacientepet-update/pacientepet-update.component';
+import { PacientepetDeleteComponent } from './components/pacientepet/pacientepet-delete/pacientepet-delete.component';
+import { PacientepetListComponent } from './components/pacientepet/pacientepet-list/pacientepet-list.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +54,12 @@ import { MedvetDeleteComponent } from './components/medvet/medvet-delete/medvet-
     LoginComponent,
     MedvetCreateComponent,
     MedvetUpdateComponent,
-    MedvetDeleteComponent
+    MedvetDeleteComponent,
+    MedvetListComponent,
+    PacientepetCreateComponent,
+    PacientepetUpdateComponent,
+    PacientepetDeleteComponent,
+    PacientepetListComponent
   ],
   imports: [
     BrowserModule,
