@@ -26,4 +26,8 @@ export class MedvetService {
   update(medvet: medvet): Observable<medvet>{
     return this.http.put<medvet>(`${API_CONFIG.baseUrl}/medvet/${medvet.id}`, medvet);
   }
+
+  delete(id: any): Observable<medvet>{
+    return this.http.delete<medvet>(`${API_CONFIG.baseUrl}/medvet/${id}`);
+  }
 }
