@@ -38,6 +38,7 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { MedvetCreateComponent } from './components/medvet/medvet-create/medvet-create.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { MedvetUpdateComponent } from './components/medvet/medvet-update/medvet-update.component';
+import { MedvetDeleteComponent } from './components/medvet/medvet-delete/medvet-delete.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { MedvetUpdateComponent } from './components/medvet/medvet-update/medvet-
     MedvetListComponent,
     LoginComponent,
     MedvetCreateComponent,
-    MedvetUpdateComponent
+    MedvetUpdateComponent,
+    MedvetDeleteComponent
   ],
   imports: [
     BrowserModule,
