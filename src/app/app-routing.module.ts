@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth/auth.guard';
+import { ConsultaListComponent } from './components/consulta/consulta-list/consulta-list.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { MedvetCreateComponent } from './components/medvet/medvet-create/medvet-create.component';
@@ -27,7 +28,9 @@ const routes: Routes = [
       { path: 'pacientepet', component: PacientepetListComponent },
       { path: 'pacientepet/create', component: PacientepetCreateComponent },
       { path: 'pacientepet/update/:id', component: PacientepetUpdateComponent },
-      { path: 'pacientepet/delete/:id', component: PacientepetDeleteComponent }
+      { path: 'pacientepet/delete/:id', component: PacientepetDeleteComponent },
+
+      { path: 'consulta', component: ConsultaListComponent },
     ]
   }
 ];
