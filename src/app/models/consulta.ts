@@ -5,7 +5,7 @@ export interface consulta {
     prioridade: string;
     status: string;
     titulo: string;
-    descricao: string;
+    observacoes: string;
     medvet: any;
     pacientepet: any;
     nomePacientepet: string;

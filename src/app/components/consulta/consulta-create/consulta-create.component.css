@@ -26,11 +26,11 @@ img {
     width: 49%;
 }
 
-.descricao {
+.observacoes {
     min-height: 6rem;
     max-height: 10rem;
 }
 
 button {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
 }

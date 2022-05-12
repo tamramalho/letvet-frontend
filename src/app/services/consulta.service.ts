@@ -14,4 +14,8 @@ export class ConsultaService {
   findAll(): Observable<consulta[]> {
     return this.http.get<consulta[]>(`${API_CONFIG.baseUrl}/consulta`);
   }
+
+  create(consulta: consulta): Observable<consulta> {
+    return this.http.post<consulta>(`${API_CONFIG.baseUrl}/consulta`, consulta);
+  }
 }
