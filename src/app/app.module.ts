@@ -45,6 +45,7 @@ import { PacientepetDeleteComponent } from './components/pacientepet/pacientepet
 import { PacientepetListComponent } from './components/pacientepet/pacientepet-list/pacientepet-list.component';
 import { ConsultaListComponent } from './components/consulta/consulta-list/consulta-list.component';
 import { ConsultaCreateComponent } from './components/consulta/consulta-create/consulta-create.component';
+import { ConsultaUpdateComponent } from './components/consulta/consulta-update/consulta-update.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { ConsultaCreateComponent } from './components/consulta/consulta-create/c
     PacientepetDeleteComponent,
     PacientepetListComponent,
     ConsultaListComponent,
-    ConsultaCreateComponent
+    ConsultaCreateComponent,
+    ConsultaUpdateComponent
   ],
   imports: [
     BrowserModule,
