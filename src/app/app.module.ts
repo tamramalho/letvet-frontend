@@ -43,6 +43,7 @@ import { PacientepetCreateComponent } from './components/pacientepet/pacientepet
 import { PacientepetUpdateComponent } from './components/pacientepet/pacientepet-update/pacientepet-update.component';
 import { PacientepetDeleteComponent } from './components/pacientepet/pacientepet-delete/pacientepet-delete.component';
 import { PacientepetListComponent } from './components/pacientepet/pacientepet-list/pacientepet-list.component';
+import { ConsultaListComponent } from './components/consulta/consulta-list/consulta-list.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { PacientepetListComponent } from './components/pacientepet/pacientepet-l
     PacientepetCreateComponent,
     PacientepetUpdateComponent,
     PacientepetDeleteComponent,
-    PacientepetListComponent
+    PacientepetListComponent,
+    ConsultaListComponent
   ],
   imports: [
     BrowserModule,
