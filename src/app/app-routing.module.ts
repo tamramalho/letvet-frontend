@@ -18,7 +18,9 @@ import { PacientepetListComponent } from './components/pacientepet/pacientepet-l
 import { PacientepetUpdateComponent } from './components/pacientepet/pacientepet-update/pacientepet-update.component';
 
 const routes: Routes = [
+
   { path: 'login', component: LoginComponent },
+  
   {
     path: '', component: NavComponent, canActivate: [AuthGuard], children: [
       { path: 'home', component: HomeComponent },
@@ -45,4 +47,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

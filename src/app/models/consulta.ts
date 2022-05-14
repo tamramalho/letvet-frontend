@@ -1,4 +1,5 @@
 export interface consulta {
+    
     id?: any;
     dataConsulta?: string;
     dataAtendimento?: string;

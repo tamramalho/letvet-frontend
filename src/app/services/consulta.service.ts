@@ -7,6 +7,7 @@ import { consulta } from '../models/consulta';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ConsultaService {
 
   constructor(private http: HttpClient) { }

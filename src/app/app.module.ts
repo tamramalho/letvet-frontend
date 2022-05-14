@@ -69,15 +69,19 @@ import { ConsultaReadComponent } from './components/consulta/consulta-read/consu
     ConsultaUpdateComponent,
     ConsultaReadComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
     // Forms
     FormsModule,
     ReactiveFormsModule,
+
     // Requisições http
     HttpClientModule,
+    
     // Angular Material
     MatFormFieldModule,
     MatPaginatorModule,
@@ -93,14 +97,18 @@ import { ConsultaReadComponent } from './components/consulta/consulta-read/consu
     MatIconModule,
     MatListModule,
     MatCardModule,
+
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
       progressBar: true
     }),
+
     NgxMaskModule.forRoot()
   ],
+
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

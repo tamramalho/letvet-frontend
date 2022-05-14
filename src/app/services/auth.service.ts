@@ -7,6 +7,7 @@ import { Credenciais } from '../models/credenciais';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
 
   jwtService: JwtHelperService = new JwtHelperService();
