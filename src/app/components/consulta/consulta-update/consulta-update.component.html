@@ -12,7 +12,7 @@
 
     <div class="status-prioridade">
         <mat-form-field appearance="outline">
-            <mat-label>{{ retornaStatus(consulta.status) }}</mat-label>
+            <mat-label>Status: ({{ retornaStatus(consulta.status) }})</mat-label>
             <mat-select [(ngModel)]="consulta.status" name="status" [formControl]="status" required>
                 <mat-option value="0">MARCADA</mat-option>
                 <mat-option value="1">EM ANDAMENTO</mat-option>
@@ -20,7 +20,7 @@
             </mat-select>
         </mat-form-field>
         <mat-form-field appearance="outline">
-            <mat-label>{{ retornaPrioridade(consulta.prioridade) }}</mat-label>
+            <mat-label>Prioridade: ({{ retornaPrioridade(consulta.prioridade) }})</mat-label>
             <mat-select [(ngModel)]="consulta.prioridade" name="prioridade" [formControl]="prioridade" required>
                 <mat-option value="0">POUCO URGENTE</mat-option>
                 <mat-option value="1">URGENTE</mat-option>
@@ -31,7 +31,7 @@
     
     <div class="medvet">
         <mat-form-field class="full-width" appearance="outline">
-            <mat-label>{{ consulta.nomeMedvet }}</mat-label>
+            <mat-label>Médico: ({{ consulta.nomeMedvet }})</mat-label>
             <mat-select [(ngModel)]="consulta.medvet" name="medvet" [formControl]="medvet" required>
                 <mat-option *ngFor="let mv of medvets" value="{{ mv.id }}">{{ mv.nome }}</mat-option>
             </mat-select>
@@ -40,7 +40,7 @@
 
     <div class="pacientepet">
         <mat-form-field class="full-width" appearance="outline">
-            <mat-label>{{ consulta.nomePacientepet }}</mat-label>
+            <mat-label>Paciente: ({{ consulta.nomePacientepet }})</mat-label>
             <mat-select [(ngModel)]="consulta.pacientepet" name="pacientepet" [formControl]="pacientepet" required>
                 <mat-option *ngFor="let pp of pacientepets" value="{{ pp.id }}">{{ pp.nome }}</mat-option>
             </mat-select>

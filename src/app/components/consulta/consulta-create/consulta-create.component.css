@@ -17,13 +17,13 @@ img {
     height: 15rem;
 }
 
-.status-prioridade{
+.status-prioridade {
     display: flex;
     justify-content: space-between;
 }
 
 .status-prioridade mat-form-fied {
-    width: 55%;
+    width: 49%;
 }
 
 .observacoes {
