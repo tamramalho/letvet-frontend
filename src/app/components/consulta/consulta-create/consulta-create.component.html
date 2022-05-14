@@ -5,7 +5,8 @@
     <form class="form">
         <mat-form-field class="full-width" appearance="outline">
             <mat-label>Tipo de consulta</mat-label>
-            <input [(ngModel)]="consulta.titulo" name="titulo" [formControl]="titulo" required matInput placeholder="Ex. Consulta rotineira">
+            <input [(ngModel)]="consulta.titulo" name="titulo" [formControl]="titulo" required matInput
+                placeholder="Ex. Consulta rotineira">
         </mat-form-field>
     </form>
 
@@ -18,16 +19,16 @@
                 <mat-option value="2">FINALIZADA</mat-option>
             </mat-select>
         </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Selecione a prioridade</mat-label>
+            <mat-select [(ngModel)]="consulta.prioridade" name="prioridade" [formControl]="prioridade" required>
+                <mat-option value="0">POUCO URGENTE</mat-option>
+                <mat-option value="1">URGENTE</mat-option>
+                <mat-option value="2">MUITO URGENTE</mat-option>
+            </mat-select>
+        </mat-form-field>
     </div>
-    <mat-form-field appearance="outline">
-        <mat-label>Selecione a prioridade</mat-label>
-        <mat-select [(ngModel)]="consulta.prioridade" name="prioridade" [formControl]="prioridade" required>
-            <mat-option value="0">POUCO URGENTE</mat-option>
-            <mat-option value="1">URGENTE</mat-option>
-            <mat-option value="2">MUITO URGENTE</mat-option>
-        </mat-select>
-    </mat-form-field>
-
+    
     <div class="medvet">
         <mat-form-field class="full-width" appearance="outline">
             <mat-label>Selecione o Médico veterinário</mat-label>
@@ -48,8 +49,8 @@
     <form class="form">
         <mat-form-field class="full-width" appearance="outline">
             <mat-label>Obervações sobre a consulta</mat-label>
-            <textarea [(ngModel)]="consulta.observacoes" name="observacoes" [formControl]="observacoes" required class="observacoes" matInput
-                placeholder="Ex. Realizar exame de sangue..."></textarea>
+            <textarea [(ngModel)]="consulta.observacoes" name="observacoes" [formControl]="observacoes" required
+                class="observacoes" matInput placeholder="Ex. Realizar exame de sangue..."></textarea>
         </mat-form-field>
     </form>
 
